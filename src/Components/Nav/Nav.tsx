@@ -1,35 +1,30 @@
-import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Nav.css";
 
 const NavBar = () => {
-    const [currentPath, setCurrentPath] = useState<string>("");
-
-    useEffect(() => {
-        setCurrentPath(window.location.pathname); // Get the current URL path
-    }, []);
-
     return (
         <nav className="nav">
             <ul>
                 <li>
-                    <a href="/" className={currentPath === "/" ? "active" : ""}>
+                    <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
                         Home
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/about" className={currentPath === "/about" ? "active" : ""}>
+                    <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
                         About
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/skills" className={currentPath === "/skills" ? "active" : ""}>
+                    <NavLink to="/skills" className={({ isActive }) => (isActive ? "active" : "")}>
                         Skills
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/contact" className={currentPath === "/contact" ? "active" : ""}>
+                    <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
                         Contact
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </nav>
