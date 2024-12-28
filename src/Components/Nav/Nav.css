@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+.nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 2rem; /* Adds spacing above the navbar */
+    margin-left: auto; /* Ensures centering */
+    margin-right: auto; /* Ensures centering */
+    background-color: rgba(133, 133, 133, 0.53);
+    border-radius: 30px; /* Creates the oval shape */
+    padding: 0.5rem 2rem;
+    width: 450px;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns items in a row */
+    gap: 1.75rem; /* Adds spacing between items */
+}
+.nav li {
+    margin-right: 1.75rem; /* Adds space between list items */
+}
+.nav li:last-child {
+    margin-right: 0; /* Removes margin on the last item */
+}
+.nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(245, 245, 245);
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav a:hover {
+    color: rgb(245, 245, 245, 0.35); /* Changes color on hover */
+}
+/* Highlights the active navigation link */
+.nav a.active {
+    color: rgba(245, 245, 245, 0.35); /* Matches the hover effect */
+
+}
