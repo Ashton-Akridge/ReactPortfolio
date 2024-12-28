@@ -1,4 +1,4 @@
-import NavBar from '../../viteportfolio/src/Components/Nav/Nav.tsx'
+import NavBar from "./Components/Nav/Nav.tsx";
 import './App.css'
 
 
