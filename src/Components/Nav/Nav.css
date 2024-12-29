@@ -40,7 +40,18 @@
 .nav a.active {
     color: rgba(245, 245, 245, 0.35); /* Matches the hover effect */
 }
-@media screen and (max-device-width: 550px) {
+@media screen and (max-device-width: 700px) {
+    .nav {
+        font-size: 1.15rem;
+        border-radius: 1.525rem; /* Creates the oval shape */
+        padding: 0.4rem 1.75em;
+        width: 21rem;
+    }
+    .nav li {
+        margin-right: 0.5rem; /* Adds space between list items */
+    }
+}
+@media screen and (max-device-width: 475px) {
     .nav {
         font-size: 1rem;
         border-radius: 1.625rem; /* Creates the oval shape */
