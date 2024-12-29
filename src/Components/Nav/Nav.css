@@ -40,23 +40,26 @@
 .nav a.active {
     color: rgba(245, 245, 245, 0.35); /* Matches the hover effect */
 }
-@media screen and (max-device-width: 700px) {
+@media screen and (max-device-width: 700px){
     .nav {
         font-size: 1.15rem;
         border-radius: 1.525rem; /* Creates the oval shape */
         padding: 0.4rem 1.75em;
         width: 21rem;
+        margin-top: 1.5rem; /* Adds spacing above the navbar */
     }
     .nav li {
         margin-right: 0.5rem; /* Adds space between list items */
     }
+
 }
-@media screen and (max-device-width: 475px) {
+@media screen and (max-device-width: 475px), screen and (max-device-height: 530px) {
     .nav {
         font-size: 1rem;
         border-radius: 1.625rem; /* Creates the oval shape */
         padding: 0.25rem 1.5rem;
         width: 19rem;
+        margin-top: 1rem; /* Adds spacing above the navbar */
     }
     .nav li {
         margin-right: 0.5rem; /* Adds space between list items */

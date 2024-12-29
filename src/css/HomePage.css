@@ -6,7 +6,7 @@
     height: 31.25rem;
     margin-left: auto; /* Ensures centering */
     margin-right: auto; /* Ensures centering */
-    margin-top: 15rem;
+    top: 15rem;
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
@@ -149,8 +149,13 @@
     opacity: 1;
 }
 
-
-@media screen and (max-device-width: 1065px) {
+@media screen and (max-device-height: 850px){
+    .widget{
+        top: 10rem;
+    }
+}
+@media screen and (max-device-width: 1045px),
+screen and (max-device-height: 700px){
     .widget{
         width: 42.5rem;
         height: 21.25rem;
@@ -167,6 +172,10 @@
     .content p{
         font-size: 0.9rem;
         margin: 0.1rem 0 0;
+    }
+    p svg{
+        width: 0.9rem;  /* Adjust size for medium screens */
+        height: 0.9rem; /* Adjust size for medium screens */
     }
     .svg-container {
         gap:0.5rem;
@@ -206,20 +215,121 @@
         visibility: hidden;
         opacity: 0;
     }
-    p svg{
-        width: 0.9rem;  /* Adjust size for medium screens */
-        height: 0.9rem; /* Adjust size for medium screens */
+    .github-svg-container a:hover,
+    .linkedIn-svg-container a:hover,
+    .resume-svg-container a:hover{
+        transform: translateY(0); /* Moves the logo up when hovered */
     }
 }
-@media screen and (max-device-width: 700px) {
-    .widget{
+
+@media screen and (max-device-width: 700px),
+screen and (max-device-height: 530px){
+    .widget {
         width: 27.5rem;
-        height: 11.25rem;
+        height: 15.25rem;
+        padding-top: 2.5rem;
+        padding-left: 1.5rem; /* Add padding to make room inside the widget */
+
     }
+    .content{
+        margin: 0;
+    }
+    .content h4{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .content p{
+        font-size: 0.7rem;
+        margin: 0.2rem 0 0;
+    }
+    p svg{
+        width: 0.7rem;  /* Adjust size for medium screens */
+        height: 0.7rem; /* Adjust size for medium screens */
+    }
+    .svg-container {
+        gap:0.3rem;
+    }
+    .github-svg-container svg {
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+        margin-top: 0.5rem; /* Adds spacing between the text and the SVG */
+    }
+    .github-svg-container a{
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+    }
+    .linkedIn-svg-container svg{
+        width: 2.5rem;  /* Adjust size for medium screens */
+        height: 2.5rem; /* Adjust size for medium screens */
+        margin-top: 0.25rem; /* Adds spacing between the text and the SVG */
+    }
+    .linkedIn-svg-container a{
+        width: 2.25rem;  /* Adjust size for medium screens */
+        height: 2.25rem; /* Adjust size for medium screens */
+    }
+    .resume-svg-container svg{
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+        margin-top: 0.5rem; /* Adds spacing between the text and the SVG */
+    }
+    .resume-svg-container a{
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+
+    }
+
+
 }
-@media screen and (max-device-width: 475px) {
+@media screen and (max-device-width: 475px)
+{
     .widget{
-        width: 17.5rem;
-        height: 11.25rem;
+        width: 22.5rem;
+        height: 13.25rem;
+        padding-top: 2rem;
+        padding-left: 1.25rem; /* Add padding to make room inside the widget */
+        top: 10rem;
+    }
+    .content h4{
+        font-size: 1.35rem;
+        margin: 0;
+    }
+    .content p{
+        font-size: 0.6rem;
+        margin: 0.1rem 0 0;
+    }
+    p svg{
+        width: 0.6rem;  /* Adjust size for medium screens */
+        height: 0.6rem; /* Adjust size for medium screens */
+    }
+    .svg-container {
+        gap:0.3rem;
+    }
+    .github-svg-container svg {
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+        margin-top: 0.35rem; /* Adds spacing between the text and the SVG */
+    }
+    .github-svg-container a{
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+    }
+    .linkedIn-svg-container svg{
+        width: 2.25rem;  /* Adjust size for medium screens */
+        height: 2.25rem; /* Adjust size for medium screens */
+        margin-top: 0.25rem; /* Adds spacing between the text and the SVG */
+    }
+    .linkedIn-svg-container a{
+        width: 2rem;  /* Adjust size for medium screens */
+        height: 2rem; /* Adjust size for medium screens */
+    }
+    .resume-svg-container svg{
+        width: 1.9rem;  /* Adjust size for medium screens */
+        height: 1.9rem; /* Adjust size for medium screens */
+        margin-top: 0.45rem; /* Adds spacing between the text and the SVG */
+    }
+    .resume-svg-container a{
+        width: 1.75rem;  /* Adjust size for medium screens */
+        height: 1.75rem; /* Adjust size for medium screens */
+
     }
 }
