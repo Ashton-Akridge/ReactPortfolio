@@ -11,7 +11,6 @@ const router = createBrowserRouter([
     {
         path : '/',
         element: <HomePage/>,
-        errorElement: <NotFoundPage/>,
     },
     {
         path: '/about',
@@ -24,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: '/contact',
         element: <AboutPage/>
+    },
+    {
+        path: '*',
+        element: <NotFoundPage/>
     }
 ]);
 
