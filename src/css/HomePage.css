@@ -8,7 +8,7 @@
     margin-right: auto; /* Ensures centering */
     margin-top: 15rem;
     border-radius: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
     padding-top: 4.5rem;
     padding-left: 4.5rem; /* Add padding to make room inside the widget */
@@ -39,7 +39,7 @@
 }
 .svg-container {
     display: flex;
-    gap:10px
+    gap:0.625rem;
 }
 /* Move second SVG to the left */
 .github-svg-container svg{
@@ -53,7 +53,7 @@
     transition: transform 0.3s ease; /* Smooth transition for the movement */
 }
 .github-svg-container a:hover{
-    transform: translateY(-10px); /* Moves the logo up when hovered */
+    transform: translateY(-0.625rem); /* Moves the logo up when hovered */
 }
 /* Tooltip styling */
 .github-svg-container .tooltip {
@@ -61,14 +61,14 @@
     opacity: 0;
     transition: opacity 0.4s ease;
     position: absolute;
-    bottom: -45px; /* Position the tooltip under the GitHub logo */
+    bottom: -2.8125rem; /* Position the tooltip under the GitHub logo */
     left: 1.6875rem;
     transform: translateX(-50%);
     background-color: rgba(133, 133, 133, 0.53);
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     white-space: nowrap;
 }
 
@@ -90,7 +90,7 @@
     transition: transform 0.3s ease; /* Smooth transition for the movement */
 }
 .linkedIn-svg-container a:hover{
-    transform: translateY(-10px); /* Moves the logo up when hovered */
+    transform: translateY(-0.625rem); /* Moves the logo up when hovered */
 }
 /* Tooltip styling */
 .linkedIn-svg-container .tooltip {
@@ -98,14 +98,14 @@
     opacity: 0;
     transition: opacity 0.4s ease;
     position: absolute;
-    bottom: -45px; /* Position the tooltip under the GitHub logo */
+    bottom: -2.8125rem; /* Position the tooltip under the GitHub logo */
     left: 1.875rem;
     transform: translateX(-50%);
     background-color: rgba(133, 133, 133, 0.53);
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     white-space: nowrap;
 }
 
@@ -113,8 +113,6 @@
     visibility: visible;
     opacity: 1;
 }
-
-
 /* Move second SVG to the left */
 .resume-svg-container svg{
     display: flex; /* Flexbox container for left alignment */
@@ -123,11 +121,11 @@
 }
 .resume-svg-container a{
     display: block;
-    width: 3.25rem;
+    width: 3rem;
     transition: transform 0.3s ease; /* Smooth transition for the movement */
 }
 .resume-svg-container a:hover{
-    transform: translateY(-10px); /* Moves the logo up when hovered */
+    transform: translateY(-0.625rem); /* Moves the logo up when hovered */
 }
 /* Tooltip styling */
 .resume-svg-container .tooltip {
@@ -135,14 +133,14 @@
     opacity: 0;
     transition: opacity 0.4s ease;
     position: absolute;
-    bottom: -45px; /* Position the tooltip under the GitHub logo */
+    bottom: -2.8125rem; /* Position the tooltip under the GitHub logo */
     left: 1.875rem;
     transform: translateX(-50%);
     background-color: rgba(133, 133, 133, 0.53);
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     white-space: nowrap;
 }
 
@@ -150,6 +148,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 
 @media screen and (max-device-width: 1065px) {
     .widget{
@@ -166,16 +165,16 @@
         margin: 0;
     }
     .content p{
-
         font-size: 0.9rem;
         margin: 0.1rem 0 0;
     }
     .svg-container {
-        gap:0;
+        gap:0.5rem;
     }
     .github-svg-container svg {
         width: 2.25rem;  /* Adjust size for medium screens */
         height: 2.25rem; /* Adjust size for medium screens */
+        margin-top: 0.75rem; /* Adds spacing between the text and the SVG */
     }
     .github-svg-container a{
         width: 2.25rem;  /* Adjust size for medium screens */
@@ -184,18 +183,21 @@
     .linkedIn-svg-container svg{
         width: 2.75rem;  /* Adjust size for medium screens */
         height: 2.75rem; /* Adjust size for medium screens */
+        margin-top: 0.5rem; /* Adds spacing between the text and the SVG */
     }
     .linkedIn-svg-container a{
-        width: 2.75rem;  /* Adjust size for medium screens */
-        height: 2.75rem; /* Adjust size for medium screens */
-    }
-    .resume-svg-container svg{
-         width: 2.75rem;  /* Adjust size for medium screens */
-         height: 2.75rem; /* Adjust size for medium screens */
-    }
-    .resume-svg-container a{
         width: 2.5rem;  /* Adjust size for medium screens */
         height: 2.5rem; /* Adjust size for medium screens */
+    }
+    .resume-svg-container svg{
+         width: 2.25rem;  /* Adjust size for medium screens */
+         height: 2.25rem; /* Adjust size for medium screens */
+        margin-top: 0.75rem; /* Adds spacing between the text and the SVG */
+    }
+    .resume-svg-container a{
+        width: 2.25rem;  /* Adjust size for medium screens */
+        height: 2.25rem; /* Adjust size for medium screens */
+
     }
     .resume-svg-container a:hover .tooltip,
     .github-svg-container a:hover .tooltip,
