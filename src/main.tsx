@@ -5,6 +5,8 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import AboutPage from "./Pages/AboutPage.tsx";
 import './css/main.css'
 import NotFoundPage from "./Pages/NotFoundPage.tsx";
+import SkillsPage from "./Pages/SkillsPage.tsx";
+import ContactPage from "./Pages/ContactPage.tsx";
 
 //Defines what components get rendered at each specific path
 const router = createBrowserRouter([
@@ -18,11 +20,11 @@ const router = createBrowserRouter([
     },
     {
         path: '/skills',
-        element: <AboutPage/>
+        element: <SkillsPage/>
     },
     {
         path: '/contact',
-        element: <AboutPage/>
+        element: <ContactPage/>
     },
     {
         path: '*',

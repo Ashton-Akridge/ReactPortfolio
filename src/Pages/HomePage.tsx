@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
 import NavBar from "../Components/Nav/Nav.tsx";
 import '../css/HomePage.css'
 import Pdf from './static/Ashton Akridge Resume.pdf'
+import { gsap } from 'gsap';
 
 
 
 export default function HomePage() {
+    useEffect(() => {
+        // Animation for the widget when the component mounts
+        gsap.fromTo('.widget', {opacity: -1, y:30}, {opacity:1, y:0, duration: 1, delay: 0.5})
+
+    }, []);
+
     return (
         <>
         <NavBar />
