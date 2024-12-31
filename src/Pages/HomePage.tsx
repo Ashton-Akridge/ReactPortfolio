@@ -7,12 +7,11 @@ import { gsap } from 'gsap';
 
 
 export default function HomePage() {
+
     useEffect(() => {
-        // Animation for the widget when the component mounts
-        gsap.fromTo('.widget', {opacity: -1, y:30}, {opacity:1, y:0, duration: 1, delay: 0.5})
+        gsap.fromTo('.widget', {opacity: -1, y: 30}, {opacity: 1, y: 0, duration: 1, delay: 0.25})
 
     }, []);
-
     return (
         <>
         <NavBar />
