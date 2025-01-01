@@ -40,7 +40,7 @@
 .nav a.active {
     color: rgba(245, 245, 245, 0.35); /* Matches the hover effect */
 }
-@media screen and (max-device-width: 700px){
+@media screen and (max-width: 700px){
     .nav {
         font-size: 1.15rem;
         border-radius: 1.525rem; /* Creates the oval shape */
@@ -53,7 +53,7 @@
     }
 
 }
-@media screen and (max-device-width: 475px), screen and (max-device-height: 530px) {
+@media screen and (max-width: 475px), screen and (max-height: 530px) {
     .nav {
         font-size: 1rem;
         border-radius: 1.625rem; /* Creates the oval shape */
