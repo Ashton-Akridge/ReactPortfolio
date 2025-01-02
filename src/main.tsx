@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <ContactPage/>
     },
     {
-        path: '*',
+        path: '/404',
         element: <NotFoundPage/>
     }
 ]);
