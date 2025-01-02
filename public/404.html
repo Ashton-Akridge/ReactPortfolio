@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found</title>
     <script>
-        // If the route doesn't exist, redirect to index.html (React Router will handle the rest)
-        const path = window.location.pathname;
-        if (path !== '/' ) {
-            window.location.replace('/index.html');
-        }
+        // Attempt to redirect to main.tsx (or the bundled JS file)
+        document.addEventListener('DOMContentLoaded', function () {
+            const path = window.location.pathname;
+            // You can modify this logic based on how your routing works
+            const mainFile = '/main.js'; // Adjust to match your bundled JS file (main.tsx compiles to main.js)
+
+            // Check if the route exists and if not, attempt to redirect
+            if (path !== '/' ) {
+                // Try loading the main JS file. If it doesn't exist, fallback to index.html.
+                fetch(mainFile)
+                    .then(response => {
+                        if (response.ok) {
+                            // If main.js exists, load it.
+                            window.location.replace(mainFile);
+                        } else {
+                            // If main.js doesn't exist or fails, fallback to index.html
+                            window.location.replace('/index.html');
+                        }
+                    })
+                    .catch(() => {
+                        // If the fetch fails for any reason, fallback to index.html
+                        window.location.replace('/index.html');
+                    });
+            }
+        });
     </script>
 </head>
 <body>
