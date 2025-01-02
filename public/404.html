@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found</title>
     <script>
-        // Only redirect if the current page is not index.html
-        if (window.location.pathname !== '/index.html') {
-            let redirectUrl = window.location.pathname + window.location.search;
-            window.location.replace("/index.html" + redirectUrl);
+        // If the route doesn't exist, redirect to index.html (React Router will handle the rest)
+        const path = window.location.pathname;
+        if (path !== '/' ) {
+            window.location.replace('/index.html');
         }
     </script>
 </head>
