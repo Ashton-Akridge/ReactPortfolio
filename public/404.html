@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found</title>
     <script>
-        // If the route doesn't exist, redirect to index.html (React Router will handle the rest)
+        // If the route doesn't exist, redirect to index.html without affecting the hash part of the URL
         const path = window.location.pathname;
-        if (path !== '/' ) {
-            window.location.replace('/index.html');
+        const hash = window.location.hash;  // Preserve the hash (e.g., #/skills)
+
+        if (path !== '/') {
+            window.location.replace('/' + hash + '/index.html');  // Redirect to the same hash
         }
     </script>
 </head>
