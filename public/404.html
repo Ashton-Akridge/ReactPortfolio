@@ -7,10 +7,9 @@
     <script>
         // If the route doesn't exist, redirect to index.html without affecting the hash part of the URL
         const path = window.location.pathname;
-        const hash = window.location.hash;  // Preserve the hash (e.g., #/skills)
 
         if (path !== '/') {
-            window.location.replace('/' + hash + '/index.html');  // Redirect to the same hash
+            window.location.replace('/' + '#' + '/index.html');  // Redirect to the same hash
         }
     </script>
 </head>
