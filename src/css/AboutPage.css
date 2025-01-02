@@ -23,7 +23,7 @@
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-left: 2.5rem; /* Add padding to make room inside the widget */
     box-sizing: border-box; /* Ensures padding doesn't overflow the element */
     font-family: 'Inter', sans-serif;
@@ -55,11 +55,54 @@
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
-    padding-top: 4.5rem;
-    padding-left: 4.5rem; /* Add padding to make room inside the widget */
     box-sizing: border-box; /* Ensures padding doesn't overflow the element */
     font-family: 'Inter', sans-serif;
 }
+.title-container{
+    display: flex;
+    justify-content: space-between; /* Aligns the content to the left */
+}
+.title-container svg{
+    display: flex;
+    margin-right: 1rem; /* Adds spacing between the text and the SVG */
+
+}
+.title-container a{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    transition: transform 0.3s ease; /* Smooth transition for the movement */
+}
+.title-container a:hover{
+    transform: translateY(-0.525rem); /* Moves the logo up when hovered */
+}
+.Music > .content{
+    margin-top: 0;
+}
+.Music > .content h4{
+    font-weight: 400;
+    font-size: 2.75rem;
+    text-align: left;
+    color: rgb(245, 245, 245);
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+}
+
+
+.Spotify-Playlist{
+    position: relative;
+    width: 45rem;
+    left: 9.5rem;
+    margin-top: 1rem;
+
+}
+.Spotify-Playlist p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .Hobbies{
     position: relative; /* Sets a reference for absolute positioning */
     width: 39rem;

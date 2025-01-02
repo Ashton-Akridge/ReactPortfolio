@@ -8,6 +8,7 @@ import NotFoundPage from "./Pages/NotFoundPage.tsx";
 import SkillsPage from "./Pages/SkillsPage.tsx";
 import ContactPage from "./Pages/ContactPage.tsx";
 
+
 //Defines what components get rendered at each specific path
 const router = createHashRouter([
     {
