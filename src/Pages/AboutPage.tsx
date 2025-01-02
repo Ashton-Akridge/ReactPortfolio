@@ -1,5 +1,5 @@
 import NavBar from "../Components/Nav/Nav.tsx";
-import { PlaylistDisplay } from "/Users/ashtonakridge/WebstormProjects/viteportfolio/src/Pages/CallBack.tsx"; // Import the PlaylistDisplay component
+import { PlaylistDisplay } from "./CallBack.tsx"; // Import the PlaylistDisplay component
 import '../css/AboutPage.css'
 
 
