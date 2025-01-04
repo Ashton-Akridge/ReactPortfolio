@@ -89,12 +89,10 @@
     padding-left: 2.5rem;
     padding-top: 2rem;
 }
-
-
 .Spotify-Playlist{
     position: relative;
     width: 45rem;
-    left: 9.5rem;
+    left: 9.8rem;
     margin-top: 1rem;
 
 }
@@ -102,7 +100,6 @@
     text-align: center;
     font-size: 1.5rem;
 }
-
 .Hobbies{
     position: relative; /* Sets a reference for absolute positioning */
     width: 39rem;
@@ -112,8 +109,27 @@
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
-    padding-top: 4.5rem;
-    padding-left: 4.5rem; /* Add padding to make room inside the widget */
+    padding-top: 2rem;
+    padding-left: 2.5rem; /* Add padding to make room inside the widget */
     box-sizing: border-box; /* Ensures padding doesn't overflow the element */
     font-family: 'Inter', sans-serif;
+}
+.Hobbies > .content{
+    margin-top: 0;
+}
+.Hobbies > .content img{
+    border-radius: 1rem;
+}
+.Hobbies > .content div{
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+.Hobbies > .content p{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    left: 85px;
+    font-weight: bold;
 }
