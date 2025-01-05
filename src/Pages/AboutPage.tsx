@@ -39,20 +39,22 @@ export default function AboutPage() {
             });
 
             // Reset the next image and description
-            gsap.set(`#${nextHobby.id}`, { x: '100px', opacity: 0 });
-            gsap.set(`#desc-${nextHobby.id}`, { x: '100px', opacity: 0 });
+            gsap.set(`#${nextHobby.id}`, { x: '100px', opacity: 0});
+            gsap.set(`#desc-${nextHobby.id}`, { x: '100px', opacity: 0});
 
             // Animate next image and description in
             gsap.to(`#${nextHobby.id}`, {
                 x: '0px',
                 opacity: 1,
                 duration: 1,
+                delay: 1,
                 ease: 'power2.inOut',
             });
             gsap.to(`#desc-${nextHobby.id}`, {
                 x: '0px',
                 opacity: 1,
                 duration: 1,
+                delay: 1,
                 ease: 'power2.inOut',
             });
 
