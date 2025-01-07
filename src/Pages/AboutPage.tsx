@@ -9,6 +9,14 @@ import Ashton from './static/Ashton.png';
 import gsap from 'gsap'; // Import GSAP for animation
 
 export default function AboutPage() {
+
+    useEffect(() => {
+        gsap.fromTo('.ashtonAkridge', {opacity: -1, x: -30}, {opacity: 1, x: 0, duration: 2})
+        gsap.fromTo('.AboutMe', {opacity: -1, x: 30}, {opacity: 1, x: 0, duration: 1.75, delay: 0.25})
+        gsap.fromTo('.Music', {opacity: -1, y: 30}, {opacity: 1, y: 0, duration: 1.25, delay: 0.75})
+        gsap.fromTo('.Hobbies', {opacity: -1, y: 30}, {opacity: 1, y: 0, duration: 1, delay: 1})
+    }, []);
+
     // Memoize the Hobbies array to avoid re-creating it on each render
     const Hobbies = useMemo(() => [
         { id: "chess", photo: Chess, description: "Chess" },

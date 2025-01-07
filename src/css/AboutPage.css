@@ -17,6 +17,7 @@
 }
 .ashtonAkridge h4{
     font-weight: 400;
+    color: rgb(245, 245, 245);
 }
 .ashtonAkridge img{
     border-radius: 20rem;
@@ -134,6 +135,11 @@
     padding-left: 2.5rem; /* Add padding to make room inside the widget */
     box-sizing: border-box; /* Ensures padding doesn't overflow the element */
     font-family: 'Inter', sans-serif;
+}
+.Hobbies h4{
+    font-weight: 400;
+    font-size: 2.75rem;
+    color: rgb(245, 245, 245);
 }
 .Hobbies > .content{
     margin-top: 0;
