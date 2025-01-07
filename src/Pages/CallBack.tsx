@@ -129,13 +129,6 @@ export const PlaylistDisplay = ({ playlistId }: { playlistId: string }) => {
                             <img
                                 src={tracks[currentTrackIndex].album.images[0]?.url}
                                 alt={tracks[currentTrackIndex].name}
-                                style={{
-                                    width: '200px',
-                                    height: '200px',
-                                    objectFit: 'fill',
-                                    marginBottom: '10px',
-                                    borderRadius: '8px',
-                                }}
                             />
                             <p>
                                 <strong>{tracks[currentTrackIndex].name}</strong> by{' '}

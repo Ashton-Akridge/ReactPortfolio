@@ -5,6 +5,7 @@ import '../css/AboutPage.css';
 import Chess from './static/Chess.png';
 import Cars from './static/Cars.png';
 import Baseball from './static/Baseball.png';
+import Ashton from './static/Ashton.png';
 import gsap from 'gsap'; // Import GSAP for animation
 
 export default function AboutPage() {
@@ -74,8 +75,15 @@ export default function AboutPage() {
         <>
             <NavBar />
             <div className="container">
-                <div className="Memojiwidget">
-                    <div className="content"></div>
+                <div className="ashtonAkridge">
+                    <div className="content">
+                        <h4>Ashton Akridge</h4>
+                        <div>
+                            <img src={Ashton} alt={Ashton}/>
+                            <p>Huntsville, AL | Software Engineering Student</p>
+                        </div>
+
+                    </div>
                 </div>
                 <div className="AboutMe">
                     <div className="content">
