@@ -189,6 +189,19 @@ export default function SkillsPage() {
 
                     </div>
                 </div>
+                <div className="bottomContainer">
+                    <div className="experienceWidget">
+                        <div className="content">
+
+                        </div>
+                    </div>
+                    <div className="educationWidget">
+                        <div className="content">
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </>
     )
