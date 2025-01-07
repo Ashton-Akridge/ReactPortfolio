@@ -250,5 +250,9 @@
         left: 70px;
         font-weight: bold;
     }
-
+}
+@media screen and (max-width: 1980px) {
+    .container {
+        left: 0;
+    }
 }
