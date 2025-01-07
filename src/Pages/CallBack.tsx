@@ -138,7 +138,7 @@ export const PlaylistDisplay = ({ playlistId }: { playlistId: string }) => {
                     </div>
                 </div>
             ) : (
-                <p>Loading playlist...</p>
+                <p></p>
             )}
         </div>
     );
