@@ -154,7 +154,14 @@
     left: 85px;
     font-weight: bold;
 }
-
+@media screen and (min-width: 2241px) {
+    .container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 5rem;
+    }
+}
 @media screen and (max-width: 2190px){
     .container{
         position: relative;
