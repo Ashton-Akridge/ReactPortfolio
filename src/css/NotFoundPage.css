@@ -1,7 +1,7 @@
 a{
     text-decoration: none;
 }
-button {
+.NowFoundButton {
     margin: 12px;
     height: 50px;
     width: 120px;
@@ -19,7 +19,7 @@ button {
     transition: 500ms;
 }
 
-button:hover {
+.NowFoundButton:hover {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
     inset -5px -5px 10px #444;
     color: #d6d6d6;

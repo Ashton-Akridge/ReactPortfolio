@@ -6,7 +6,7 @@ export default function NotFoundPage(){
         404 Not Found
         <br/>
         <Link to='/'>
-            <button>Back to Home Page</button>
+            <button className="NowFoundButton">Back to Home Page</button>
         </Link>
     </div>;
 }
