@@ -69,6 +69,8 @@
     display: flex;
     gap: 3rem;
 }
+
+
 .experienceWidget{
     position: relative;
     width: 40%;
@@ -78,11 +80,48 @@
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
-    padding-top: 2rem;
-    padding-left: 4.5rem;
+    padding-top: 2.5rem;
+    padding-left: 4rem;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
+.experienceWidget > .content{
+    margin: 0;
+}
+.experience,
+.education{
+    display: flex;
+    margin-right: 2rem;
+
+}
+.experience-svg,
+.education-svg, svg{
+    margin-top: 3rem;
+}
+.experience-words,
+.education-words{
+    color: rgb(245, 245, 245, 0.75);
+    text-align: start;
+}
+.experience-words h5{
+    position: relative;
+    font-size: 2.75rem;
+    font-weight: normal;
+    margin: 0 0 0 2rem;
+    top: 5%;
+}
+.experience-words p{
+    position: relative;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0 2.25rem;
+}
+.experience-words h6{
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin: 1rem 4rem 0 0;
+    left: 4%;
+}
+
 
 
 .educationWidget{
@@ -94,9 +133,33 @@
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
     background-color: rgb(255, 255, 255, 0.02);
-    padding-top: 2rem;
-    padding-left: 4.5rem;
+    padding-top: 2.5rem;
+    padding-left: 4rem;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-
+.educationWidget > .content{
+    margin: 0;
+}
+.education-words h5{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0 0 0 2rem;
+    top: 10%;
+}
+.education-words p{
+    position: relative;
+    font-size: 1.25rem;
+    margin: 3.25rem 0 0 2rem;
+}
+.education-words {
+    line-height: 1;
+}
+.education-words h6{
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin: 1rem 4rem 0 0;
+    left: 3.25%;
+}

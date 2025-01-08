@@ -1,9 +1,24 @@
 import NavBar from "../Components/Nav/Nav.tsx";
 import '../css/Skills.css'
+import {useEffect} from "react";
+import gsap from "gsap";
 
 
 
 export default function SkillsPage() {
+
+    useEffect(() => {
+        gsap.fromTo('.skillsWidget', {opacity: -1, y: 100}, {opacity: 1, y: 0, duration: 1, delay: 0.5})
+
+        gsap.fromTo('.border', {opacity: 0, x:-200}, {opacity: 1, x:0 , duration: 1.25, delay: 1})
+        gsap.fromTo('.carousel', {opacity: -1}, {opacity: 1 , duration: 1.25, delay: 2.5})
+
+
+        gsap.fromTo('.educationWidget', {opacity: 0, y: 200}, {opacity: 1, y: 0, duration: 1.25, delay: 1})
+        gsap.fromTo('.experienceWidget', {opacity: -1, x: -200}, {opacity: 1, x: 0, duration: 1.75, delay: 1})
+
+    }, []);
+
     return (
         <>
             <NavBar />
@@ -192,11 +207,93 @@ export default function SkillsPage() {
                 <div className="bottomContainer">
                     <div className="experienceWidget">
                         <div className="content">
+                            <h4>Work Experience</h4>
+                            <div className="experience">
+                                <div className="experience-svg">
+                                    <svg width="2.25rem" height="20.4375rem" viewBox="0 0 24 218" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2032_47)">
+                                            <line x1="11.4612" y1="196.069" x2="11.4612" y2="23.0688" stroke="#808080"
+                                                  stroke-opacity="0.55" stroke-width="2"/>
+                                        </g>
+                                        <ellipse cx="12.0597" cy="208.692" rx="10.0985" ry="8.30769" stroke="#535353"
+                                                 stroke-width="2"/>
+                                        <ellipse cx="12.0597" cy="208.692" rx="7.97254" ry="6.5587" fill="#999999"/>
+                                        <g clip-path="url(#clip1_2032_47)">
+                                            <line x1="11.4612" y1="196.069" x2="11.4612" y2="23.0688" stroke="#808080"
+                                                  stroke-opacity="0.55" stroke-width="2"/>
+                                        </g>
+                                        <ellipse cx="12.0597" cy="9.30769" rx="10.0985" ry="8.30769" stroke="#808080"
+                                                 stroke-opacity="0.55" stroke-width="2"/>
+                                        <ellipse cx="12.0597" cy="9.30773" rx="7.97254" ry="6.5587" fill="#999999"/>
+                                        <defs>
+                                            <clipPath id="clip0_2032_47">
+                                                <rect width="193.7" height="19.6922" fill="white"
+                                                      transform="matrix(0 -1 1 0 1.96118 206.069)"/>
+                                            </clipPath>
+                                            <clipPath id="clip1_2032_47">
+                                                <rect width="193.7" height="19.6922" fill="white"
+                                                      transform="matrix(0 -1 1 0 1.96118 206.069)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div className="experience-words">
+                                    <h5>I.T Intern @ Alabama School of<br/>Cyber Technology & Engineering</h5>
+                                    <p>May, 2023 - May, 2024</p>
+                                    <h6>Networked, troubleshooted, and restored hundreds of computers.</h6>
+                                    <h5>Science Applications International Corporation(SAIC) Intern</h5>
+                                    <p>May, 2023 - May, 2024</p>
+                                    <h6>Repaired computers, revamped the Cyber Camp at the Space and Rocket Center, and hardened software and hardware solutions.</h6>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                     <div className="educationWidget">
                         <div className="content">
+                            <h4>Education</h4>
+                            <div className="education">
+                                <div className="education-svg">
+                                    <svg width="2.25rem" height="20.4375rem" viewBox="0 0 24 218" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2032_47)">
+                                            <line x1="11.4612" y1="196.069" x2="11.4612" y2="23.0688" stroke="#808080"
+                                                  stroke-opacity="0.55" stroke-width="2"/>
+                                        </g>
+                                        <ellipse cx="12.0597" cy="208.692" rx="10.0985" ry="8.30769" stroke="#535353"
+                                                 stroke-width="2"/>
+                                        <ellipse cx="12.0597" cy="208.692" rx="7.97254" ry="6.5587" fill="#999999"/>
+                                        <g clip-path="url(#clip1_2032_47)">
+                                            <line x1="11.4612" y1="196.069" x2="11.4612" y2="23.0688" stroke="#808080"
+                                                  stroke-opacity="0.55" stroke-width="2"/>
+                                        </g>
+                                        <ellipse cx="12.0597" cy="9.30769" rx="10.0985" ry="8.30769" stroke="#808080"
+                                                 stroke-opacity="0.55" stroke-width="2"/>
+                                        <ellipse cx="12.0597" cy="9.30773" rx="7.97254" ry="6.5587" fill="#999999"/>
+                                        <defs>
+                                            <clipPath id="clip0_2032_47">
+                                                <rect width="193.7" height="19.6922" fill="white"
+                                                      transform="matrix(0 -1 1 0 1.96118 206.069)"/>
+                                            </clipPath>
+                                            <clipPath id="clip1_2032_47">
+                                                <rect width="193.7" height="19.6922" fill="white"
+                                                      transform="matrix(0 -1 1 0 1.96118 206.069)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div className="education-words">
+                                    <h5>Alabama School of Cyber Technology & Engineering</h5>
+                                    <p>May,2021 - May, 2024</p>
+                                    <h6>Advanced High school Diploma focused on implementing cyber protections into the
+                                        engineering life-cycle.</h6>
+                                    <wbr/>
+                                    <h5>Mississippi State University</h5>
+                                    <p>August,2024 - Present</p>
+                                    <h6>Undergraduate Student working hard towards <br/>a Bachelors of Science in Software Engineering</h6>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
