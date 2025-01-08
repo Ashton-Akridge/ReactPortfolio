@@ -167,3 +167,27 @@
     top: -4rem;
     left: 1%;
 }
+
+@media screen and (max-height: 1020px) {
+    .Contactwidget{
+        height:50rem;
+        padding-top: 1rem;
+    }
+    .Email input{
+        left: 260%;
+        top: -10%;
+    }
+    .Message{
+        left: 2%;
+    }
+    .Message h6{
+        left: -41%;
+    }
+    .SubmitButton {
+        left: 30%;
+    }
+    .Message textarea {
+        width: 84%;
+        left: -3.5%;
+    }
+}
