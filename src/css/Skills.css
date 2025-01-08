@@ -164,3 +164,11 @@
     margin: 1rem 4rem 0 0;
     left: 3.25%;
 }
+@media screen and (min-width: 2241px) {
+    .container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 5%;
+    }
+}

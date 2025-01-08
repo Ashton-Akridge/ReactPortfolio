@@ -286,7 +286,7 @@ export default function SkillsPage() {
                                 <div className="education-words">
                                     <h5>Alabama School of Cyber Technology & Engineering</h5>
                                     <p>May,2021 - May, 2024</p>
-                                    <h6>Advanced High school Diploma focused on implementing cyber protections into the
+                                    <h6>Advanced high school diploma focused on implementing cyber protections into the
                                         engineering life-cycle.</h6>
                                     <wbr/>
                                     <h5>Mississippi State University</h5>
