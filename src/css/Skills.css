@@ -93,10 +93,11 @@
     margin-right: 2rem;
 
 }
-.experience-svg,
-.education-svg, svg{
+.experience-svg svg,
+.education svg{
     margin-top: 3rem;
 }
+
 .experience-words,
 .education-words{
     color: rgb(245, 245, 245, 0.75);

@@ -243,7 +243,7 @@ export default function SkillsPage() {
                                     <p>May, 2023 - May, 2024</p>
                                     <h6>Networked, troubleshooted, and restored hundreds of computers.</h6>
                                     <h5>Science Applications International Corporation(SAIC) Intern</h5>
-                                    <p>May, 2023 - May, 2024</p>
+                                    <p>May,2023 - May, 2024</p>
                                     <h6>Repaired computers, revamped the Cyber Camp at the Space and Rocket Center, and hardened software and hardware solutions.</h6>
                                 </div>
 
