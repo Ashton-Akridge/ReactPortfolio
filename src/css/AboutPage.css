@@ -80,7 +80,6 @@
 .title-container svg{
     display: flex;
     margin-right: 1rem; /* Adds spacing between the text and the SVG */
-
 }
 .title-container a{
     display: block;
@@ -264,8 +263,362 @@
         font-weight: bold;
     }
 }
-@media screen and (max-width: 1980px) {
+@media screen and (max-width: 1950px) {
     .container {
+        left: -2%;
+    }
+}
+@media screen and (max-width: 1892px) {
+    .ashtonAkridge{
+        width: 30rem;
+        height: 47rem;
+        top: 3rem;
+        left: 6rem;
+    }
+    .ashtonAkridge img{
+        margin-top: 6rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .AboutMe{
+        width: 60rem;
+        height: 25rem;
+        top: -44rem;
+        left: 40rem;
+    }
+    .AboutMe > .content p{
+        font-size: 1.5rem;
+    }
+    .Music{
+        width: 29rem;
+        height: 21rem;
+        top: -43rem;
+        left: 40rem;
+    }
+
+    .Music > .content h4{
+        padding-left: 2.25rem;
+        padding-top: 1.75rem;
+        font-size: 2rem;
+    }
+
+    .Scale{
+        width: 4rem;
+        height: 4rem;
+
+    }
+    .title-container a{
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+
+    .Spotify-Playlist{
+        width: 23rem;
+        left: 5rem;
+        margin-top: 0.25rem;
+    }
+    .Spotify-Playlist p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .Spotify-Playlist img{
+        width: 11rem;
+        height: 11rem;
+        margin-Bottom: 0;
+    }
+
+    .Hobbies {
+        width: 29rem;
+        height: 21rem;
+        top: -64rem;
+        left: 71rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+
+    }
+    .Hobbies > .content img{
+        border-radius: 1rem;
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .Hobbies > .content div{
+        margin-left: 7.5rem;
+        margin-top: 0.5rem;
+    }
+    .Hobbies > .content p{
+        position: relative;
+        top: 12.25rem;
+        text-align: center;
+        font-size: 1rem;
+        opacity: 0;
+        left: 4.5rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1599px){
+    .ashtonAkridge{
+        width: 25rem;
+        height: 42rem;
+}
+    .ashtonAkridge img{
+        margin-top: 6rem;
+        width: 20rem;
+        height: 20rem;
+    }
+    .AboutMe{
+        width: 55rem;
+        height: 20rem;
+        top: -39rem;
+        left: 33rem;
+    }
+    .AboutMe > .content p{
+        font-size: 1.25rem;
+    }
+    .AboutMe > .content h4{
+        margin-bottom: 1.5rem;
+
+    }
+    .Music{
+        width: 27rem;
+        height: 21rem;
+        top: -38rem;
+        left: 33rem;
+    }
+
+    .Music > .content h4{
+        padding-left: 2.25rem;
+        padding-top: 1.75rem;
+        font-size: 1.75rem;
+    }
+
+    .Spotify-Playlist{
+        width: 23rem;
+        left: 3.75rem;
+        margin-top: 0.25rem;
+    }
+    .Spotify-Playlist p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .Spotify-Playlist img{
+        width: 11rem;
+        height: 11rem;
+        margin-Bottom: -10px;
+    }
+
+    .Hobbies {
+        width: 27rem;
+        height: 21rem;
+        top: -59rem;
+        left: 61rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+
+    }
+    .Hobbies > .content div{
+        margin-left: 5.75rem;
+        margin-top: 0.5rem;
+    }
+    .Hobbies > .content p{
+        position: relative;
+        top: 12.25rem;
+        text-align: center;
+        font-size: 1rem;
+        opacity: 0;
+        left: 4.5rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .container{
+        left: -5%;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .container{
+        left: -6rem;
+    }
+    .ashtonAkridge,
+    .AboutMe,
+    .Music,
+    .Hobbies{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ashtonAkridge img{
+        margin-top: 6rem;
+        width: 20rem;
+        height: 20rem;
+    }
+    .AboutMe{
+        width: 25rem;
+        height: 35rem;
+        top: 5rem;
+        left: 6rem;
+    }
+    .AboutMe > .content p{
+        font-size: 1.25rem;
+    }
+    .AboutMe > .content h4{
+        margin-bottom: 1.5rem;
+
+    }
+    .Music{
+        width: 25rem;
+        height: 21rem;
+        top: 7rem;
+        left: 6rem;
+    }
+
+    .Music > .content h4{
+        padding-left: 2.25rem;
+        padding-top: 1.75rem;
+        font-size: 1.75rem;
+    }
+
+    .Spotify-Playlist{
+        width: 23rem;
+        left: 2.75rem;
+        margin-top: 0.25rem;
+    }
+    .Spotify-Playlist p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .Spotify-Playlist img{
+        width: 11rem;
+        height: 11rem;
+        margin-Bottom: -10px;
+    }
+
+    .Hobbies {
+        width: 25rem;
+        height: 21rem;
+        top: 9rem;
+        left: 6rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        margin-bottom: 12rem;
+
+    }
+    .Hobbies > .content div{
+        margin-left: 5rem;
+        margin-top: 0.5rem;
+    }
+    .Hobbies > .content p{
+        position: relative;
+        top: 12.25rem;
+        text-align: center;
+        font-size: 1rem;
+        opacity: 0;
+        left: 4.25rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 475px) {
+    .container{
+        left: -6rem;
+    }
+    .ashtonAkridge{
+        width: 20rem;
+        height: 35rem;
+        top: 3rem;
+        padding-left: 0;
+    }
+    .ashtonAkridge img{
+        margin-top: 5rem;
+        width: 15rem;
+        height: 15rem;
+    }
+    .ashtonAkridge > .content p{
+        font-size: 1rem;
+    }
+    .ashtonAkridge > .content div{
+        margin-left: 2.25rem;
+    }
+    .ashtonAkridge > .content h4{
+        text-align: center;
+    }
+    .AboutMe{
+        width: 20rem;
+        height: 28rem;
+        top: 5rem;
+        left: 6rem;
+        padding-left: 0;
+    }
+    .AboutMe > .content p{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: rgb(245, 245, 245, 0.75);
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    .AboutMe > .content h4{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .Music{
+        width: 20rem;
+        height: 21rem;
+        top: 7rem;
+        left: 6rem;
+    }
+    .Scale{
+        width: 3rem;
+        height: 3rem;
+
+    }
+    .title-container a{
+        width: 3rem;
+        height: 3rem;
+        padding-top: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .Music > .content h4{
+        padding-left: 1.75rem;
+        padding-top: 1.75rem;
+    }
+
+    .Spotify-Playlist{
+        width: 20rem;
         left: 0;
+        margin-top: 0.5rem;
+    }
+    .Spotify-Playlist p{
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    .Spotify-Playlist img{
+        width: 11rem;
+        height: 11rem;
+        margin-Bottom: -10px;
+    }
+
+    .Hobbies {
+        width: 20rem;
+        height: 21rem;
+        top: 9rem;
+        left: 6rem;
+        padding-top: 1.5rem;
+        padding-left: 0;
+        margin-bottom: 12rem;
+    }
+    .Hobbies > .content h4{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .Hobbies > .content div{
+        margin-left: 4.3rem;
+        margin-top: 0.5rem;
+    }
+    .Hobbies > .content p{
+        font-size: 1rem;
+        left: 4.25rem;
+        font-weight: bold;
     }
 }
