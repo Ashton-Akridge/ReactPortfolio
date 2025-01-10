@@ -70,7 +70,6 @@
     width: 95%;
     height: 35rem;
     top: 7rem;
-
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     background-color: rgb(255, 255, 255, 0.02);
@@ -115,7 +114,7 @@
 
 
 .Email input{
-    left: 283%;
+    left: 327%;
     top: -15%;
 }
 .Name input{
@@ -141,7 +140,7 @@
     resize: vertical;
     min-height: 150px;
     position: relative;
-    left: -2.75%;
+    left: -3%;
     font-family: 'Inter', sans-serif;
 }
 
@@ -163,7 +162,7 @@
     color: rgb(245, 245, 245, 0.75);
     font-size: 1.5rem;
     font-weight: lighter;
-    left: -41.5%;
+    left: -42%;
     margin: 0 0 1rem 0;
 }
 .Message{
