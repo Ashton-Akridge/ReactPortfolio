@@ -22,7 +22,7 @@ export default function SkillsPage() {
     return (
         <>
             <NavBar />
-            <div className="container">
+            <div className="Skillscontainer">
                 <div className="skillsWidget">
                     <div className="content">
                         <div className="border">
@@ -288,7 +288,7 @@ export default function SkillsPage() {
                                     <p>May,2021 - May, 2024</p>
                                     <h6>Advanced high school diploma focused on implementing cyber protections into the
                                         engineering life-cycle.</h6>
-                                    <wbr/>
+                                    <span className="custom-br"></span>
                                     <h5>Mississippi State University</h5>
                                     <p>August,2024 - Present</p>
                                     <h6>Undergraduate Student working hard towards <br/>a Bachelors of Science in Software Engineering</h6>

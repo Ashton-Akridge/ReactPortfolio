@@ -5,7 +5,6 @@
     max-width: 84.5%;
     overflow: hidden;
     display: flex;
-
 }
 
 .group {
@@ -164,7 +163,13 @@
     margin: 1rem 4rem 0 0;
     left: 3.25%;
 }
-@media screen and (max-width: 2141px) {
+.custom-br{
+    display: block;
+    width:100%;
+    height: 5rem; /* Or desired height */
+    margin-top: 30px; /* Adjust for spacing */
+}
+@media screen and (max-width: 2170px) {
     .experience-words h5{
         font-size: 2.25rem;
 
@@ -173,9 +178,290 @@
         font-size: 2rem;
     }
 }
-@media screen and (max-height: 1090px) {
+@media screen and (max-width: 1920px) {
     .experienceWidget,
     .educationWidget {
         height: 40rem;
+    }
+}
+@media screen and (max-width: 1875px) {
+    .experienceWidget,
+    .educationWidget {
+        height: 35rem;
+    }
+    .experience-words h5{
+        font-size: 2rem;
+    }
+    .education-words h5{
+        font-size: 1.75rem;
+        top: 10%;
+    }
+    .education-words p,
+    .experience-words p{
+        font-size: 1rem;
+    }
+    .education-words h6{
+        font-size: 1.25rem;
+        font-weight: normal;
+        margin: 0.75rem 4rem 0 0;
+        left: 4%;
+    }
+    .experience-words h6{
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: normal;
+        margin: 1rem 4rem 0 0;
+        left: 5%;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .experienceWidget,
+    .educationWidget {
+        height: 25rem;
+    }
+    .experience-words h5{
+        font-size: 1.25rem;
+    }
+    .education-words h5{
+        font-size: 1.25rem;
+        margin-top: -1.5rem;
+        top: 15%;
+    }
+    .education-words p,
+    .experience-words p{
+        font-size: 0.75rem;
+        left: -0.5%;
+    }
+    .education-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 4%;
+    }
+    .experience-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 6.25%;
+    }
+    .experience-svg svg,
+    .education svg{
+        margin-top: 1rem;
+        width: 2rem;
+        height: 13rem;
+    }
+    .custom-br{
+        height: 4rem; /* Or desired height */
+        margin-top: 10px; /* Adjust for spacing */
+    }
+    .skillsWidget{
+        width: 94%;
+        height: 14rem;
+    }
+    .border{
+        position: absolute;
+        width: 15%;
+        height: 9rem;
+        left: 3%;
+        top: 2.5rem;
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-skills h4 {
+        font-size: 4rem;
+        color: rgb(245, 245, 245);
+    }
+    .bottomContainer{
+        display: flex;
+        gap: 2rem;
+    }
+    .carousel {
+        left: 14%;
+        max-width: 86%;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .bottomContainer{
+        display: block;
+    }
+    .experienceWidget,
+    .educationWidget{
+        margin-left: auto;
+        margin-right: auto;
+        left:0;
+        width: 55%;
+        height: 28rem;
+    }
+    .educationWidget {
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+    .skillsWidget{
+        width: 55%;
+        height: 15rem;
+        left: 0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .experience-svg svg,
+    .education svg{
+        margin-top: 0;
+        width: 1.5rem;
+        height: 20rem;
+    }
+    .custom-br{
+        height: 3rem;
+    }
+    .border{
+        width: 20%;
+        height: 7rem;
+        left: 3%;
+        top: 4rem;
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .border h4{
+        font-size: 2rem;
+    }
+    .education-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 7.5%;
+    }
+    .experience-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 8.25%;
+    }
+
+
+}
+@media screen and (max-width: 1050px) {
+    .carousel {
+        position: relative;
+        left: 8%;
+        top: 2rem;
+        max-width: 92%;
+        height: 5rem;
+        overflow: hidden;
+        display: flex;
+    }
+    .group {
+        display: flex;
+        gap: 20rem;
+        padding-right: 20rem;
+        animation: scrolling 20s linear infinite;
+    }
+    .carousel {
+        /* ... */
+        &:hover .group {
+            animation-play-state: unset;
+        }
+    }
+
+}
+@media screen and (max-width: 855px) {
+    .carousel {
+        position: relative;
+        left: 3.75%;
+        top: 3rem;
+        max-width: 95%;
+        height: 5rem;
+        overflow: hidden;
+        display: flex;
+    }
+    .educationWidget,
+    .experienceWidget,
+    .skillsWidget {
+        width: 22rem;
+    }
+    .educationWidget,
+    .experienceWidget{
+        height: 23rem;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .experience-svg svg{
+        width: 1rem;
+        height: 13rem;
+        margin-left: 2rem;
+    }
+
+    .education svg{
+        margin-top: 0;
+        width: 1rem;
+        height: 16rem;
+        margin-left: 2rem;
+    }
+    .custom-br{
+        height: 3rem;
+    }
+    .border{
+        width: 20%;
+        height: 5rem;
+        left: 3%;
+        top: 5rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .border h4{
+        font-size: 1.5rem;
+    }
+    .education-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 7.5%;
+    }
+    .experience-words h6{
+        font-size: 1rem;
+        margin: 0.5rem 4rem 0 0;
+        left: 8.25%;
+    }
+    .educationWidget> .content h4{
+        text-align: center;
+    }
+    .experienceWidget> .content h4{
+        text-align: center;
+    }
+    .experience-words h6{
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0.5rem 1rem 0 0;
+        left: 6%;
+    }
+    .education-words h6{
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0.5rem 1rem 0 0;
+        left: 6%;
+    }
+    .education-words h5{
+        font-size: 1rem;
+        margin: 0 0 0 1rem;
+        top: 10%;
+    }
+    .experience-words h5{
+        position: relative;
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0 0 0 1rem;
+        top: 5%;
+    }
+    .experience-words p{
+        margin: 1rem 0 0 1.1rem;
+    }
+    .education-words p{
+        margin: 2rem 0 0 1.1rem;
+    }
+    .custom-br{
+        height: 0;
     }
 }
