@@ -35,21 +35,21 @@ export default function AboutPage() {
 
             // Animate current image and description out
             gsap.to(`#${currentHobby.id}`, {
-                x: '-100px',
+                x: '-1.5rem',
                 opacity: 0,
                 duration: 1,
                 ease: 'power2.inOut',
             });
             gsap.to(`#desc-${currentHobby.id}`, {
-                x: '-100px',
+                x: '-1.5rem',
                 opacity: 0,
                 duration: 1,
                 ease: 'power2.inOut',
             });
 
             // Reset the next image and description
-            gsap.set(`#${nextHobby.id}`, { x: '100px', opacity: 0});
-            gsap.set(`#desc-${nextHobby.id}`, { x: '100px', opacity: 0});
+            gsap.set(`#${nextHobby.id}`, { x: '1.5rem', opacity: 0});
+            gsap.set(`#desc-${nextHobby.id}`, { x: '1.5rem', opacity: 0});
 
             // Animate next image and description in
             gsap.to(`#${nextHobby.id}`, {

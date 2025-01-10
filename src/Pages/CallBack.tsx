@@ -89,7 +89,7 @@ export const PlaylistDisplay = ({ playlistId }: { playlistId: string }) => {
         if (trackRef.current && tracks.length > 0) {
             // Animate the current track moving left and the next track coming from the right
             gsap.to(trackRef.current, {
-                x: '-100px', // Move the current track to the left
+                x: '-1.5rem', // Move the current track to the left
                 duration: 1, // Duration of the animation
                 opacity: 0,
                 ease: 'power2.inOut',
@@ -98,7 +98,7 @@ export const PlaylistDisplay = ({ playlistId }: { playlistId: string }) => {
                     setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % tracks.length);
 
                     // Reset the position of the track and animate the next one from the right
-                    gsap.set(trackRef.current, { x: '100px' });
+                    gsap.set(trackRef.current, { x: '1.5rem' });
                     gsap.to(trackRef.current, {
                         x: '0px', // Move the next track to its normal position
                         duration: 1,

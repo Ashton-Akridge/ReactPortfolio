@@ -1,3 +1,6 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
 .ashtonAkridge{
     position: relative; /* Sets a reference for absolute positioning */
     width: 45rem;
@@ -14,6 +17,7 @@
 }
 .ashtonAkridge > .content{
     margin-top: 0;
+    left: 10rem;
 }
 .ashtonAkridge h4{
     font-weight: 400;
@@ -24,11 +28,16 @@
     width: 25rem;
     height: 25rem;
     margin-top: 10rem;
+
 }
-.ashtonAkridge p{
+.ashtonAkridge p {
     font-weight: 400;
     text-align: center;
 }
+.ashtonAkridge div{
+
+}
+
 .AboutMe{
     position: relative; /* Sets a reference for absolute positioning */
     width: 80rem;
@@ -439,6 +448,9 @@
     }
 }
 @media screen and (max-width: 1360px) {
+    body{
+        overflow: visible;
+    }
     .container{
         left: -6rem;
     }
