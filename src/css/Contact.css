@@ -1,6 +1,6 @@
 .Contactwidget{
     position: relative;
-    width: 60%;
+    width: 83rem;
     height: 55rem;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +67,7 @@
 }
 .In-SiteEmailWidget{
     position: relative;
-    width: 95%;
+    width: 75rem;
     height: 35rem;
     top: 7rem;
     border-radius: 2rem;
@@ -83,6 +83,8 @@
 }
 .Name-Email{
     display: flex;
+    position: relative;
+    left: 3rem;
 }
 .Name h6,
 .Email h6{
@@ -94,15 +96,39 @@
 }
 .Email h6{
     position : absolute;
-    width:100%;
+    left: 40.5rem;
+}
+.Name h6{
+    position: absolute;
+    left: 2rem;
+}
+
+/* Input Fields */
+.Name input {
+    position: absolute;
+    display: block;
+    width: 15rem;
+    height: 1rem;
+    margin-top: 15rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: white;
+    border: 0.01rem solid rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    top: -11rem;
+    left: 2rem;
 }
 
 
-/* Input Fields */
-.Name input, .Email input {
-    position: relative;
-    width: 100%;
-    height: 10%;
+.Email input{
+    position: absolute;
+    display: block;
+    left: 40.5rem;
+    top: 4rem;
+    width: 15rem;
+    height: 1rem;
     padding: 10px;
     border-radius: 8px;
     background-color: rgb(255, 255, 255, 0.1);
@@ -113,24 +139,25 @@
 }
 
 
-.Email input{
-    left: 281%;
-    top: -15%;
-}
-.Name input{
-    top: -43%;
-    left: 32%;
-}
-
-
 .Name input:focus, .Email input:focus, .Message textarea:focus {
     outline: none;
     border-color: #007bff;
 }
 
+/* Submit Button */
+.SubmitButton {
+    display: flex;
+    justify-content: flex-start;
+}
+.SubmitButton button {
+    position: absolute;
+    width: 62rem;
+    left: 6.75rem;
+    margin-top: 23rem;
+}
 /* Textarea */
 .Message textarea {
-    width: 84.5%;
+    width: 60rem;
     padding: 10px;
     border-radius: 8px;
     background-color: rgb(255, 255, 255, 0.1);
@@ -140,57 +167,215 @@
     resize: vertical;
     min-height: 150px;
     position: relative;
-    left: -2.25%;
     font-family: 'Inter', sans-serif;
-}
+    left:5rem;
+    margin-top: 3rem;
 
-/* Submit Button */
-.SubmitButton {
-    display: flex;
-    justify-content: flex-start;
-
-}
-.SubmitButton button {
-    position: relative;
-    width: 88%;
-    margin: 0 0 0 0;
-    top: -4.5rem;
 }
 
 .Message h6{
-    position: relative;
+    position: absolute;
     color: rgb(245, 245, 245, 0.75);
     font-size: 1.5rem;
     font-weight: lighter;
-    left: -40.75%;
-    margin: 0 0 0.75rem 0;
+    left: 5rem;
+    margin-top: 0.5rem;
 }
 .Message{
-    position :relative;
-    top: -4rem;
-    left: 1%;
+    position :absolute;
+    margin-top: 8rem;
 }
 
-@media screen and (max-height: 1020px) {
+@media screen and (max-width: 1690px){
     .Contactwidget{
-        height:50rem;
-        padding-top: 1rem;
-    }
-    .Email input{
-        left: 260%;
-        top: -10%;
-    }
-    .Message{
-        left: 2%;
-    }
-    .Message h6{
-        left: -41%;
-    }
-    .SubmitButton {
-        left: 30%;
-    }
-    .Message textarea {
-        width: 84%;
-        left: -3.5%;
+        position: relative;
+        width: 80rem;
+        height: 55rem;
+        top: 7rem;
+        border-radius: 2rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        background-color: rgb(255, 255, 255, 0.02);
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
     }
 }
+@media screen and (max-width: 1315px){
+    .Contactwidget{
+        position: relative;
+        width: 55rem;
+        height: 45rem;
+        top: 7rem;
+        padding-left: 2.5rem;
+    }
+    .content > .Words h4{
+        font-size: 3rem;
+    }
+    .boton-elegante {
+        padding: 13px 27px;
+    }
+    .In-SiteEmailWidget{
+        position: relative;
+        width: 50rem;
+        height: 25rem;
+        top: 7rem;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .In-SiteEmailWidget > .Words h4{
+        font-size: 2rem;
+    }
+    .Name-Email{
+        left: -1rem;
+    }
+    .Name h6,
+    .Email h6{
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+    }
+    .Email h6{
+        left: 27rem;
+    }
+    .Name h6{
+        left: 2rem;
+    }
+    /* Input Fields */
+    .Name input {
+        width: 13rem;
+        height: 0.75rem;
+        margin-top: 14.5rem;
+        padding: 10px;
+        top: -11rem;
+        left: 2rem;
+    }
+
+    .Email input{
+        left: 27rem;
+        top: 3.5rem;
+        width: 13rem;
+        height: 0.75rem;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .SubmitButton button {
+        width: 45rem;
+        left: 2.5rem;
+        margin-top: 16rem;
+        font-size: 1rem;
+    }
+    /* Textarea */
+    .Message textarea {
+        width: 43rem;
+        font-size: 1rem;
+        min-height: 100px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        left:1.25rem;
+        margin-top: 2rem;
+    }
+
+    .Message h6{
+        position: absolute;
+        color: rgb(245, 245, 245, 0.75);
+        font-size: 1.25rem;
+        font-weight: lighter;
+        left: 1.2rem;
+        margin-top: -0rem;
+    }
+    .Message{
+        margin-top: 6rem;
+    }
+    .Words p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .Contactwidget{
+    width: 55rem;
+    height: 45rem;
+    top: 7rem;
+    padding-left: 2.5rem;
+}
+    .content > .Words h4{
+        font-size: 3rem;
+    }
+    .boton-elegante {
+        padding: 13px 27px;
+    }
+    .In-SiteEmailWidget{
+        position: relative;
+        width: 50rem;
+        height: 25rem;
+        top: 7rem;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .In-SiteEmailWidget > .Words h4{
+        font-size: 2rem;
+    }
+    .Name-Email{
+        left: -1rem;
+    }
+    .Name h6,
+    .Email h6{
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+    }
+    .Email h6{
+        left: 27rem;
+    }
+    .Name h6{
+        left: 2rem;
+    }
+    /* Input Fields */
+    .Name input {
+        width: 13rem;
+        height: 0.75rem;
+        margin-top: 14.5rem;
+        padding: 10px;
+        top: -11rem;
+        left: 2rem;
+    }
+
+    .Email input{
+        left: 27rem;
+        top: 3.5rem;
+        width: 13rem;
+        height: 0.75rem;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .SubmitButton button {
+        width: 45rem;
+        left: 2.5rem;
+        margin-top: 16rem;
+        font-size: 1rem;
+    }
+    /* Textarea */
+    .Message textarea {
+        width: 43rem;
+        font-size: 1rem;
+        min-height: 100px;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        left:1.25rem;
+        margin-top: 2rem;
+    }
+
+    .Message h6{
+        position: absolute;
+        color: rgb(245, 245, 245, 0.75);
+        font-size: 1.25rem;
+        font-weight: lighter;
+        left: 1.2rem;
+        margin-top: -0rem;
+    }
+    .Message{
+        margin-top: 6rem;
+    }
+    .Words p{
+        font-size: 1rem;
+    }}
