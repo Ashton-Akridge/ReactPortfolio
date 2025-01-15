@@ -221,9 +221,6 @@ body {
         top: -50rem;
         left: 45rem;
     }
-    .title-container a:hover{
-        transform: none/* Moves the logo up when hovered */
-    }
 
     .Music > .content h4{
         padding-left: 2.25rem;
@@ -394,6 +391,9 @@ body {
     .AboutMe > .content h4{
         margin-bottom: 1.5rem;
 
+    }
+    .title-container a:hover{
+        transform: none/* Moves the logo up when hovered */
     }
     .Music{
         width: 27rem;
