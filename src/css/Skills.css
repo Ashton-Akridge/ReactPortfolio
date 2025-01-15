@@ -181,7 +181,7 @@
 @media screen and (max-width: 1920px) {
     .experienceWidget,
     .educationWidget {
-        height: 40rem;
+        height: 39rem;
     }
 }
 @media screen and (max-width: 1875px) {
